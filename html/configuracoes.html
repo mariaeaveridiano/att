@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style2.1.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/sun.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/moon.css' rel='stylesheet'>
+  <link rel="icon" href="foto/Defense IA 2.png">
+  <title>Configurações</title>
+</head>
+
+<body>
+  <div id="theme">
+    <div class="cor">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li>
+              <a href="indexn.html">
+                <i id="cor" class="fas fa-sign-in-alt"></i>
+                <p id="cor">Inicio</p>
+              </a>
+            </li>
+            <li>
+              <a href="configuracoes.html">
+                <i id="cor" class="fas fa-laptop-code"></i>
+                <p id="cor">Configurações</p>
+              </a>
+            </li>
+            <li>
+              <a href="cadastro.html">
+                <i id="cor" class="fas fa-question-circle"></i>
+                <p id="cor">Cadastro</p>
+              </a>
+            </li>
+            <li>
+              <a href="consulta.html">
+                <i id="cor" class="fas fa-file-code"></i>
+                <p id="cor">Consultas</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header">
+
+        <a href="indexn.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Logomarca_Intelbras_verde.png"
+            style="width: 180px; height: 60px;"> </a>
+            <button id="toggle-btn" class="toggle">
+              <span id="change" class="gg-sun"></span>
+            </button>
+      </div>
+      <div class="confi">
+        <section class="divide">
+            <h2 id="textoconfig">Configurações</h2> <br>
+            <p id="textoconfig">Cadastrar e consultar usuários de acesso. Configurações de empresa/departamento e portas de
+              acesso. </p> <br> <br>
+              <img class="confifoto1" src="foto/CONFIG.png"> <br> <br>
+           
+            <h3 id="textoconfig" >Cadastrar usuários</h3> <br>
+            
+              <img class="confifoto2" src="foto/config2.png"><br> <br>
+            <p id="textoconfig">Ao cadastrar um novo usuário de acesso, é necessário preencher todas as informações solicitadas
+              e atribuir qual o nível de acesso este usuário possuí. Nível de acesso “Operador nível 1” da permissão ao
+              usuário para cadastrar e consultar visitantes e verificar visitantes em tempo real. Grupo de acesso
+              “Operador nível 2” da permissão a este usuário de cadastrar e consultar funcionários e visitantes, além de
+              permitir visualizar visitas em tempo real e histórico de acessos. O Grupo de acesso “Operador nível 3” tem
+              as mesmas permissões que o grupo de acesso “Operador nível 2”, porém também consegue visualizar os
+              cadastros distribuídos entre as diferentes companhias criadas.
+              No campo “Nome da companhia” é possível atribuir a qual empresa/departamento este usuário está vinculado.
+              Ao vincular um usuário a uma companhia, ele só poderá cadastrar novos funcionários/visitantes para a sua
+              mesma companhia e só poderá vincular funcionários/visitantes aos grupos de portas que aquela empresa foi
+              relacionada previamente. Além disso, ele não poderá visualizar cadastros vinculados a outras
+              companhias. (excesso usuário de acesso “Operador nível 3”). Ex: Um usuário de acesso da “Empresa 1” não
+              poderá consultar os visitantes da “Empresa 2”.
+            </p> <br> <br>
+            <div id="img">
+            <img class="confifoto4" src="foto/configtab.png ">
+          </div>
+            <p id="textoconfig">Diferentes usuários e suas respectivas permissões</p>
+            <p id="textoconfig"> Para realizar o login com o novo usuário de acesso criado, é necessário a utilização do email
+              + senha atribuídas ao mesmo. </p> <br> <br>
+            <h3 id="textoconfig">Empresas/departamentos</h3> <br><br>
+          
+            <img class="foto/confifoto3" src="foto/CONFIG3.png"> <br> <br>
+          
+          <p id="textoconfig">Aqui pode-se criar diferentes empresas/departamentos para melhor organização dos usuários
+            do sistema. Esta função é utilizada quando se deseja que usuários de uma
+            certa empresa/departamento não sejam visualizados pelos usuários de outra empresa/departamento. </p> <br><br>
+      
+        <h3 id="textoconfig">Portas de Acesso </h3> <br> <br>
+          <img class="confifoto4" src="foto/config4.png"> <br> <br>
+        
+        <p id="textoconfig">Nesta interface é feito o relacionamento entre empresas/departamentos e grupo de portas.
+          Ao fazer esta relação, funcionários e visitantes registrados a estas empresas só poderão ter acesso
+          ao grupo de portas a ela relacionadas.
+        </p> <br> <br>
+        
+          <img class="confifoto5" src="foto/config5.png"> <br><br>
+        
+        <p id="textoconfig">Só serão listados os grupos de portas configurados através do client do Defense IA.
+          Através do menu Gerenciamento de pessoas >
+          Permissão de controle de acesso > Adicionar.</p>
+      </section>
+    </div>
+    <script src="java/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  background-size: cover;
+  color: #fff;
+}
+
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+}
+
+#toggle-btn {
+  padding: 0.5em;
+  font-weight: 800;
+}
+
+#toggle-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.light-mode-toggle {
+  color: #000000;
+}
+
+#theme {
+  height: 100vw;
+}
+
+.light-mode-theme {
+  background-image: linear-gradient(to right top, #ffffff, #ffffff);
+  background-size: 1000% 1000%;
+  color: #000000;
+
+  #textoconfig {
+    color: #000;
+  }
+
+  #lili {
+    color: #000;
+  }
+
+  #cor {
+    color: #000;
+  }
+
+  #imagemdef {
+    filter: none;
+  }
+
+  .divide {
+    background-image: linear-gradient(to right top, #ffffff, #ffffff);
+    background-size: 1000% 1000%;
+  }
+
+}
+[class*="cadfoto"] {
+  max-width: 100%;
+  display: block;
+}
+
+[class*="confifoto"] {
+  max-width: 100%;
+  display: block;
+}
+
+[class*="iniciofoto"] {
+  max-width: 100%;
+  display: block;
+}
+[class*="consfoto"] {
+  max-width: 100%;
+  display: block;
+}
+.textocad{
+  text-align: justify;
+  margin-left: 70px;
+}
+.textocon{
+  text-align: justify;
+}
+.confi{
+  padding: 40px;
+}
+
+#light:hover {
+  cursor: pointer;
+}
+
+.divide {
+  text-align: justify;
+  margin-left: 80px;
+  top: -60px;
+  color: #fff;
+  padding: 60px;
+}
+
+#tamanho {
+  margin-bottom: 10px;
+}
+
+#imagemdef{
+  filter: none;
+}
+
+.textoconfig{
+ text-align:justify ;
+}
+
+.sidebar {
+  height: 100vh;
+  min-height: 500px;
+  width: 60px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: transparent;
+  overflow: hidden;
+  transition: width 0.2s;
+  position: fixed;
+}
+
+.sidebar:hover {
+  width: 160px;
+  overflow: visible;
+
+}
+
+nav {
+  height: 50vh;
+  min-height: 300px;
+}
+
+ul {
+  display: grid;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+li a {
+  width: 230px;
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  text-decoration: none;
+  padding: 10px 0;
+  margin-left: 10;
+  font-family: 'Poppins', sans-serif;
+  color: #cacaca;
+}
+
+li a:hover {
+  background-image: linear-gradient(to right,
+      #00a335 7px,
+      rgba(255, 255, 255, 0.1) 7px);
+  color: #ffffff;
+}
+
+i.fas {
+  font-size: 18px;
+  text-align: right;
+}
+
+li p {
+  width: 100px;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+
+#imagem {
+  height: 10px;
+  width: 10px;
+}
+
+.header {
+  top: 0%;
+  text-align: center;
+  height: 50px; 
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  padding: 200;
+  position: sticky;
+  box-sizing: border-box;
+}
+
+.header a {
+  top: 0;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  background-color: transparent;
+  size: 30px;
+  float: right;
+}
+
+.gg-sun {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 24px;
+  background:
+    linear-gradient(to bottom,
+      currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom,
+      currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px,
+    linear-gradient(to bottom,
+      currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px,
+    linear-gradient(to bottom,
+      currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
+  color: #ffffff;
+}
+
+.gg-sun::after,
+.gg-sun::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
+}
+
+.gg-sun::before {
+  transform: rotate(-45deg)
+}
+
+.gg-sun::after {
+  transform: rotate(45deg)
+}
+
+.gg-moon,
+.gg-moon::after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.gg-moon {
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom-color: transparent;
+  color: #000;
+}
+
+.gg-moon::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  top: 8px;
+  color:#000;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #fff;
+}
+
+#tamanho {
+  margin-bottom: 10px;
+}
+
+
+#textoinicio {
+  margin-left: 13px;
+  color: #fff;
+  text-align: justify;
+}
+
+body {
+  margin-left: 90px;
+  background-image: linear-gradient(to right top, #252f34, #1e262b, #00a335);
+  background-size: 1000% 1000%;
+  animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  height: 100vw;
+}
+
+/* #ladodireito {
+  position: right;
+}
+
+#ladoesquerdo {
+  position: left;
+} */
+
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 26%;
+  }
+
+  50% {
+    background-position: 100% 75%;
+  }
+
+  100% {
+    background-position: 0% 26%;
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 26%;
+  }
+
+  50% {
+    background-position: 100% 75%;
+  }
+
+  100% {
+    background-position: 0% 26%;
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 26%;
+  }
+
+  50% {
+    background-position: 100% 75%;
+  }
+
+  100% {
+    background-position: 0% 26%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 26%;
+  }
+
+  50% {
+    background-position: 100% 75%;
+  }
+
+  100% {
+    background-position: 0% 26%;
+  }
+}
+
+[idl*="theme"] {
+  width: 100%;
+}
+
